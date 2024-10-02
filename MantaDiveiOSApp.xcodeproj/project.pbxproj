@@ -16,6 +16,8 @@
 		FA82A5C82CABDAF2001F80D9 /* MantaDiveiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A5C72CABDAF2001F80D9 /* MantaDiveiOSAppTests.swift */; };
 		FA82A5D22CABDAF2001F80D9 /* MantaDiveiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A5D12CABDAF2001F80D9 /* MantaDiveiOSAppUITests.swift */; };
 		FA82A5D42CABDAF2001F80D9 /* MantaDiveiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A5D32CABDAF2001F80D9 /* MantaDiveiOSAppUITestsLaunchTests.swift */; };
+		FA82A5E72CACD65D001F80D9 /* MantaDiveWatchOSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A5E62CACD65D001F80D9 /* MantaDiveWatchOSExtension.swift */; };
+		FA82A5E92CACD65D001F80D9 /* MantaDiveWatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A5E82CACD65D001F80D9 /* MantaDiveWatchOS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		FA82A5CD2CABDAF2001F80D9 /* MantaDiveiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MantaDiveiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA82A5D12CABDAF2001F80D9 /* MantaDiveiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantaDiveiOSAppUITests.swift; sourceTree = "<group>"; };
 		FA82A5D32CABDAF2001F80D9 /* MantaDiveiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantaDiveiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA82A5E42CACD65D001F80D9 /* MantaDiveWatchOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = MantaDiveWatchOS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA82A5E62CACD65D001F80D9 /* MantaDiveWatchOSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantaDiveWatchOSExtension.swift; sourceTree = "<group>"; };
+		FA82A5E82CACD65D001F80D9 /* MantaDiveWatchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantaDiveWatchOS.swift; sourceTree = "<group>"; };
+		FA82A5EA2CACD65D001F80D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA82A5E12CACD65D001F80D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +95,7 @@
 				FA82A5AF2CABDAF1001F80D9 /* MantaDiveiOSApp */,
 				FA82A5C62CABDAF2001F80D9 /* MantaDiveiOSAppTests */,
 				FA82A5D02CABDAF2001F80D9 /* MantaDiveiOSAppUITests */,
+				FA82A5E52CACD65D001F80D9 /* MantaDiveWatchOS */,
 				FA82A5AE2CABDAF1001F80D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +106,7 @@
 				FA82A5AD2CABDAF1001F80D9 /* MantaDiveiOSApp.app */,
 				FA82A5C32CABDAF2001F80D9 /* MantaDiveiOSAppTests.xctest */,
 				FA82A5CD2CABDAF2001F80D9 /* MantaDiveiOSAppUITests.xctest */,
+				FA82A5E42CACD65D001F80D9 /* MantaDiveWatchOS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +140,16 @@
 				FA82A5D32CABDAF2001F80D9 /* MantaDiveiOSAppUITestsLaunchTests.swift */,
 			);
 			path = MantaDiveiOSAppUITests;
+			sourceTree = "<group>";
+		};
+		FA82A5E52CACD65D001F80D9 /* MantaDiveWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FA82A5E62CACD65D001F80D9 /* MantaDiveWatchOSExtension.swift */,
+				FA82A5E82CACD65D001F80D9 /* MantaDiveWatchOS.swift */,
+				FA82A5EA2CACD65D001F80D9 /* Info.plist */,
+			);
+			path = MantaDiveWatchOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +208,23 @@
 			productReference = FA82A5CD2CABDAF2001F80D9 /* MantaDiveiOSAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FA82A5E32CACD65D001F80D9 /* MantaDiveWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA82A5EB2CACD65D001F80D9 /* Build configuration list for PBXNativeTarget "MantaDiveWatchOS" */;
+			buildPhases = (
+				FA82A5E02CACD65D001F80D9 /* Sources */,
+				FA82A5E12CACD65D001F80D9 /* Frameworks */,
+				FA82A5E22CACD65D001F80D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MantaDiveWatchOS;
+			productName = MantaDiveWatchOS;
+			productReference = FA82A5E42CACD65D001F80D9 /* MantaDiveWatchOS.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +246,9 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = FA82A5AC2CABDAF1001F80D9;
 					};
+					FA82A5E32CACD65D001F80D9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 				};
 			};
 			buildConfigurationList = FA82A5A82CABDAF1001F80D9 /* Build configuration list for PBXProject "MantaDiveiOSApp" */;
@@ -222,6 +267,7 @@
 				FA82A5AC2CABDAF1001F80D9 /* MantaDiveiOSApp */,
 				FA82A5C22CABDAF2001F80D9 /* MantaDiveiOSAppTests */,
 				FA82A5CC2CABDAF2001F80D9 /* MantaDiveiOSAppUITests */,
+				FA82A5E32CACD65D001F80D9 /* MantaDiveWatchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +291,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FA82A5CB2CABDAF2001F80D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA82A5E22CACD65D001F80D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,6 +331,15 @@
 			files = (
 				FA82A5D42CABDAF2001F80D9 /* MantaDiveiOSAppUITestsLaunchTests.swift in Sources */,
 				FA82A5D22CABDAF2001F80D9 /* MantaDiveiOSAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA82A5E02CACD65D001F80D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA82A5E72CACD65D001F80D9 /* MantaDiveWatchOSExtension.swift in Sources */,
+				FA82A5E92CACD65D001F80D9 /* MantaDiveWatchOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +625,62 @@
 			};
 			name = Release;
 		};
+		FA82A5EC2CACD65D001F80D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW32R8WLA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MantaDiveWatchOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MantaDiveWatchOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divewithmanta.MantaDiveWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		FA82A5ED2CACD65D001F80D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW32R8WLA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MantaDiveWatchOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MantaDiveWatchOS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divewithmanta.MantaDiveWatchOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -598,6 +716,15 @@
 			buildConfigurations = (
 				FA82A5DE2CABDAF2001F80D9 /* Debug */,
 				FA82A5DF2CABDAF2001F80D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA82A5EB2CACD65D001F80D9 /* Build configuration list for PBXNativeTarget "MantaDiveWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA82A5EC2CACD65D001F80D9 /* Debug */,
+				FA82A5ED2CACD65D001F80D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
